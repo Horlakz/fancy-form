@@ -41,6 +41,13 @@ function enterKey(e) {
     }
 }
 
+// Back Button function
+prevBtn.addEventListener('click', goBack)
+function goBack() {
+    inputLabel.innerHTML = questions[postion - 1]
+    progress.style.width = `${((postion * 100) / questions.length) - 1}%`
+}
+
 // Get Question From Array & Add to Markup
 function getQuestion() {
     // Get Current Question
