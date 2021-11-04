@@ -45,7 +45,7 @@ function enterKey(e) {
 prevBtn.addEventListener('click', goBack)
 
 function goBack() {
-    inputLabel.innerHTML = questions[postion - 1]
+    inputLabel.innerHTML = questions[position - 1]
     console.log('go back button')
 }
 
